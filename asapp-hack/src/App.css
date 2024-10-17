@@ -1,0 +1,222 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.chat-box {
+  width: 80%;
+  max-width: 600px;
+  height: 500px;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+  animation: slide-in 0.3s ease-out;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message.question {
+  background-color: #6c63ff;
+  align-self: flex-end;
+  color: #fff;
+  text-align: right;
+}
+
+.message.answer {
+  background-color: #333;
+  align-self: flex-start;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+.user-space {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px; /* Add spacing between input and button */
+}
+
+input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: 20%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(108, 99, 255, 0.3);
+  text-align: center; /* Ensure button text is centered */
+}
+
+button:hover {
+  background-color: #554ad0;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #6c63ff;
+  border-radius: 10px;
+}
+
+.user-space {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0; /* Added padding to adjust alignment */
+  gap: 10px; /* Space between input and button */
+}
+
+input {
+  width: 75%; /* Adjusted input width to leave space for the button */
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: auto; /* Auto width based on text size */
+  padding: 15px 20px; /* Balanced padding for text inside button */
+  border-radius: 30px;
+  border: none;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(108, 99, 255, 0.3);
+}
+
+button:hover {
+  background-color: #554ad0;
+}
+
+/* Header styling */
+.app-header {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make the header span the entire window */
+  position: fixed; /* Fix the header at the top of the window */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #6c63ff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6c63ff;
+}
+
+/* Add margin-top to main content to avoid overlap with fixed header */
+main {
+  margin-top: 100px; /* Adjust this value to match the height of your header */
+}
+
+/* Other existing styles */
+.chat-box {
+  width: 80%;
+  max-width: 600px;
+  height: 500px;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto; /* Center the chat-box */
+}
+
+.user-space {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin: 0 auto; /* Center the input and button section */
+}
