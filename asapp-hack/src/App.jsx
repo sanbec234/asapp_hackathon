@@ -3,58 +3,80 @@ import './App.css';
 import axios from "axios";
 
 function App() {
-  const [question, setQuestion] = useState('');  // State for holding the question
-  const [messages, setMessages] = useState([]);  // Store chat messages
+  const [question, setQuestion] = useState('');  
+  const [messages, setMessages] = useState([]);  
+  const [loading, setLoading] = useState(false);  
 
-  // Memoize the messages array to prevent unnecessary recalculations
   const memoizedMessages = useMemo(() => messages, [messages]);
 
-  // Memoize the handleSubmit function using useCallback
   const handleSubmit = useCallback(async () => {
     if (question.trim() === "") return;
-    setMessages([...memoizedMessages, { type: 'question', text: question }]); // Add question to messages
+
+    setMessages(prevMessages => [...prevMessages, { type: 'question', text: question }]);
+    setLoading(true);
+
+    const controller = new AbortController();
+    const signal = controller.signal;
 
     try {
-      const response = await axios.post('http://localhost:8080/api/question', { question });
+      const response = await axios.post('http://localhost:8080/api/question', { question }, { signal });
       const answer = response.data.answer;
-      setMessages(prevMessages => [...prevMessages, { type: 'answer', text: answer }]); // Add answer to messages
+      setMessages(prevMessages => [...prevMessages, { type: 'answer', text: answer }]);
     } catch (error) {
-      console.error('Error submitting question:', error);
+      if (axios.isCancel(error)) {
+        console.log('Request canceled:', error.message);
+      } else {
+        console.error('Error submitting question:', error);
+        setMessages(prevMessages => [...prevMessages, { type: 'answer', text: 'Error getting response.' }]);
+      }
+    } finally {
+      setLoading(false);
     }
 
-    setQuestion('');  // Clear input after submission
-  }, [question, memoizedMessages]);  // Recreate handleSubmit only if question or memoizedMessages changes
+    setQuestion('');
+    return () => {
+      controller.abort();
+    };
+  }, [question]);
 
   return (
-    <>
-      {/* Header section */}
+    <div className="app">
       <header className="app-header">
-        <h1>PDFQuery</h1>
+        <h1>ASAPP</h1>
       </header>
 
-      <main>
-        <h2>Ask your Questions</h2>
-        
+      <main className="main-content">
         <div className="chat-box">
-          {/* Display the messages */}
           {memoizedMessages.map((message, index) => (
             <div key={index} className={`message ${message.type}`}>
               <p>{message.text}</p>
             </div>
           ))}
+          {loading && 
+            <div className="loading-container">
+              <div className="spinner"></div>
+            </div>
+          }
         </div>
-        
-        <div className='user-space'>
-          <input
-            type="text"
+
+        <div className="input-area">
+          <textarea
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            placeholder="Enter your question"
-          />
-          <button onClick={handleSubmit}>Submit Question</button>
+            placeholder="Enter a prompt for ASAPP"
+            className="input-box"
+            rows="3"  // Adjust the number of visible rows as needed
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault(); // Prevent the default behavior of Enter key
+                handleSubmit(); // Submit the question
+              }
+            }}
+            />
+          <button onClick={handleSubmit} className="submit-button">Send</button>
         </div>
       </main>
-    </>
+    </div>
   );
 }
 
