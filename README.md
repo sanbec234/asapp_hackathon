@@ -1,4 +1,4 @@
-# PDFQuery
+# ASAPP PDFQuery
 
 **PDFQuery** is a web-based application designed to answer questions from uploaded PDF files. It enables users to ask specific questions from PDF documents and to retrieve relevant information. The project is built with a Flask backend for handling PDF processing and a React frontend for user interaction, ensuring an intuitive user experience.
 
