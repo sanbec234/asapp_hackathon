@@ -1,0 +1,366 @@
+{
+    "/content/PDF_DATA/2306.11695.pdf": {
+        "title": "A S IMPLE AND EFFECTIVE PRUNING APPROACH FOR",
+        "authors": "LARGE LANGUAGE MODELS, Mingjie Sun1\u2217Zhuang Liu2\u2217Anna Bair1J. Zico Kolter1,3, 1Carnegie Mellon University2Meta AI Research3Bosch Center for AI"
+    },
+    "/content/PDF_DATA/1710.05941.pdf": {
+        "title": "SEARCHING FOR ACTIVATION FUNCTIONS",
+        "authors": "Prajit Ramachandran\u2217, Barret Zoph, Quoc V . Le, Google Brain, {prajit,barretzoph,qvl }@google.com"
+    },
+    "/content/PDF_DATA/2110.15343.pdf": {
+        "title": "Scatterbrain: Unifying Sparse and Low-rank Attention",
+        "authors": "Approximation, Beidi Chen\u2217\u2020, Tri Dao\u2217\u2020, Eric Winsor\u2020, Zhao Song\u00a7, Atri Rudra\u2021, and Christopher R\u00e9\u2020, \u2020Department of Computer Science, Stanford University"
+    },
+    "/content/PDF_DATA/2310.06825.pdf": {
+        "title": "Mistral 7B",
+        "authors": "Albert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford,, Devendra Singh Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel,, Guillaume Lample, Lucile Saulnier, L\u00e9lio Renard Lavaud, Marie-Anne Lachaux,"
+    },
+    "/content/PDF_DATA/2306.17806.pdf": {
+        "title": "Stay on topic with Classifier-Free Guidance",
+        "authors": "Guillaume V . Sanchez*, Hexaglobe, EleutherAI"
+    },
+    "/content/PDF_DATA/ICML03-094.pdf": {
+        "title": "Weighted Low-Rank Approximations",
+        "authors": "Nathan Srebro nati@mit.edu, Tommi Jaakkola tommi@ai.mit.edu, Dept. of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA"
+    },
+    "/content/PDF_DATA/2301.00774.pdf": {
+        "title": "SparseGPT: Massive Language Models Can be Accurately Pruned in One-Shot",
+        "authors": "Elias Frantar1Dan Alistarh1 2,"
+    },
+    "/content/PDF_DATA/2005.14165.pdf": {
+        "title": "Language Models are Few-Shot Learners",
+        "authors": "Tom B. Brown\u2217Benjamin Mann\u2217Nick Ryder\u2217Melanie Subbiah\u2217, Jared Kaplan\u2020Prafulla Dhariwal Arvind Neelakantan Pranav Shyam Girish Sastry, Amanda Askell Sandhini Agarwal Ariel Herbert-Voss Gretchen Krueger Tom Henighan"
+    },
+    "/content/PDF_DATA/Adaptive-mixtures-of-local-experts.pdf": {
+        "title": "InNeuralComputation ,3,pages 79-87.",
+        "authors": "Adaptiv eMixtures ofLocalExperts, RobertA.Jacobs, MichaelI.Jordan"
+    },
+    "/content/PDF_DATA/1907.01470.pdf": {
+        "title": "Augmenting Self-attention with Persistent Memory",
+        "authors": "Sainbayar Sukhbaatar, Edouard Grave, Guillaume Lample, Herve Jegou, Armand Joulin, Facebook AI Research, sainbar,egrave,guismay,rvj,ajoulin@fb.com"
+    },
+    "/content/PDF_DATA/2305.18290.pdf": {
+        "title": "Direct Preference Optimization:",
+        "authors": "Your Language Model is Secretly a Reward Model, Rafael Rafailov\u2217\u2020Archit Sharma\u2217\u2020Eric Mitchell\u2217\u2020, Stefano Ermon\u2020\u2021Christopher D. Manning\u2020Chelsea Finn\u2020"
+    },
+    "/content/PDF_DATA/2310.20707.pdf": {
+        "title": "WHAT\u2019SINMYBIGDATA?",
+        "authors": "Yanai Elazar1,2Akshita Bhagia1Ian Magnusson1Abhilasha Ravichander1, Dustin Schwenk1Alane Suhr3Pete Walsh1Dirk Groeneveld1Luca Soldaini1, Sameer Singh4Hanna Hajishirzi1,2Noah A. Smith1,2Jesse Dodge1"
+    },
+    "/content/PDF_DATA/2207.00112.pdf": {
+        "title": "Published as a conference paper at ICLR 2022",
+        "authors": "LANGUAGE MODEL COMPRESSION WITH WEIGHTED, LOW -RANK FACTORIZATION, Yen-Chang Hsu\u22171, Ting Hua\u22171, Sung-En Chang2, Qian Lou1, Yilin Shen1, and Hongxia Jin1"
+    },
+    "/content/PDF_DATA/2211.05102.pdf": {
+        "title": "EFFICIENTLY SCALING TRANSFORMER INFERENCE",
+        "authors": "Reiner Pope1Sholto Douglas1Aakanksha Chowdhery1Jacob Devlin1James Bradbury1, Anselm Levskaya1Jonathan Heek1Kefan Xiao1Shivani Agrawal1Jeff Dean1, ABSTRACT"
+    },
+    "/content/PDF_DATA/2203.02155.pdf": {
+        "title": "Training language models to follow instructions",
+        "authors": "with human feedback, Long Ouyang\u2217Jeff Wu\u2217Xu Jiang\u2217Diogo Almeida\u2217Carroll L. Wainwright\u2217, Pamela Mishkin\u2217Chong Zhang Sandhini Agarwal Katarina Slama Alex Ray"
+    },
+    "/content/PDF_DATA/2104.09864.pdf": {
+        "title": "ROFORMER : ENHANCED TRANSFORMER WITH ROTARY",
+        "authors": "POSITION EMBEDDING, Jianlin Su, Zhuiyi Technology Co., Ltd."
+    },
+    "/content/PDF_DATA/2307.13304.pdf": {
+        "title": "QuIP: 2-Bit Quantization of",
+        "authors": "Large Language Models With Guarantees, Jerry Chee, Cornell University"
+    },
+    "/content/PDF_DATA/2001.08361.pdf": {
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Jared Kaplan\u2217, Johns Hopkins University, OpenAI, jaredk@jhu.eduSam McCandlish\u2217"
+    },
+    "/content/PDF_DATA/2305.07185.pdf": {
+        "title": "MEGA BYTE: Predicting Million-byte Sequences with Multiscale Transformers",
+        "authors": "Lili Yu* 1D\u00b4aniel Simig* 1Colin Flaherty* 2Armen Aghajanyan1Luke Zettlemoyer1Mike Lewis1,"
+    },
+    "/content/PDF_DATA/2306.07629.pdf": {
+        "title": "SQUEEZE LLM: D ENSE -AND -SPARSE QUANTIZATION",
+        "authors": "Sehoon Kim\u22171Coleman Hooper\u22171Amir Gholami\u2217\u202012Zhen Dong1, Xiuyu Li1Sheng Shen1Michael W. Mahoney123Kurt Keutzer1, 1UC Berkeley2ICSI3LBNL"
+    },
+    "/content/PDF_DATA/10000000_662098952474184_2584067087619170692_n.pdf": {
+        "title": "Llama 2 : Open Foundation and Fine-Tuned Chat Models",
+        "authors": "Hugo Touvron\u2217Louis Martin\u2020Kevin Stone\u2020, Peter Albert Amjad Almahairi Yasmine Babaei Nikolay Bashlykov Soumya Batra, Prajjwal Bhargava Shruti Bhosale Dan Bikel Lukas Blecher Cristian Canton Ferrer Moya Chen"
+    },
+    "/content/PDF_DATA/2109.06243.pdf": {
+        "title": "KroneckerBERT: Learning Kronecker Decomposition for Pre-trained",
+        "authors": "Language Models via Knowledge Distillation, Marzieh S. Tahaei, Noah\u2019s Ark Lab,"
+    },
+    "/content/PDF_DATA/2301.13688.pdf": {
+        "title": "The Flan Collection: Designing Data and Methods",
+        "authors": "for E\ufb00ective Instruction Tuning, Shayne Longpre\u2217Le Hou Tu Vu Albert Webson Hyung Won Chung, Yi Tay Denny Zhou Quoc V. Le Barret Zoph Jason Wei Adam Roberts"
+    },
+    "/content/PDF_DATA/2211.09110.pdf": {
+        "title": "Published in Transactions on Machine Learning Research (08/2023)",
+        "authors": "Holistic Evaluation of Language Models, Percy Liang\u2020, Rishi Bommasani\u2020, Tony Lee\u2020, Dimitris Tsipras\u2021, Dilara Soylu\u2021, Michihiro, Yasunaga\u2021, Yian Zhang\u2021, Deepak Narayanan\u2021, Yuhuai Wu\u2021, Ananya Kumar, Benjamin New-"
+    },
+    "/content/PDF_DATA/2002.05202.pdf": {
+        "title": "arXiv:2002.05202v1  [cs.LG]  12 Feb 2020GLU Variants Improve Transformer",
+        "authors": "Noam Shazeer, Google, noam@google.com"
+    },
+    "/content/PDF_DATA/333078981_693988129081760_4712707815225756708_n.pdf": {
+        "title": "LLaMA: Open and Efficient Foundation Language Models",
+        "authors": "Hugo Touvron\u2217, Thibaut Lavril\u2217, Gautier Izacard\u2217, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin"
+    },
+    "/content/PDF_DATA/2302.13971.pdf": {
+        "title": "LLaMA: Open and Ef\ufb01cient Foundation Language Models",
+        "authors": "Hugo Touvron\u2217, Thibaut Lavril\u2217, Gautier Izacard\u2217, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin"
+    },
+    "/content/PDF_DATA/1810.04805.pdf": {
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for",
+        "authors": "Language Understanding, Jacob Devlin Ming-Wei Chang Kenton Lee Kristina Toutanova, Google AI Language"
+    },
+    "/content/PDF_DATA/2308.10792.pdf": {
+        "title": "Instruction Tuning for Large Language Models: A Survey",
+        "authors": "Shengyu Zhang\u2660, Linfeng Dong\u2660, Xiaoya Li\u2663, Sen Zhang\u2660, Xiaofei Sun\u2660, Shuhe Wang\u2663, Jiwei Li\u2660, Runyi Hu\u2660, Tianwei Zhang\u25b2, Fei Wu\u2660and Guoyin Wang\u2666"
+    },
+    "/content/PDF_DATA/2009.06489.pdf": {
+        "title": "The Hardware Lottery",
+        "authors": "Sara Hooker, Google Research, Brain Team, shooker@google.com"
+    },
+    "/content/PDF_DATA/1803.02155.pdf": {
+        "title": "Self-Attention with Relative Position Representations",
+        "authors": "Peter Shaw, Google, petershaw@google.comJakob Uszkoreit"
+    },
+    "/content/PDF_DATA/2208.07339.pdf": {
+        "title": "LLM.int8() : 8-bit Matrix Multiplication",
+        "authors": "for Transformers at Scale, Tim Dettmers\u03bb\u2217Mike Lewis\u2020Younes Belkada\u00a7\u2213Luke Zettlemoyer\u2020\u03bb, University of Washington\u03bb"
+    },
+    "/content/PDF_DATA/2210.07558.pdf": {
+        "title": "DyLoRA: Parameter-Ef\ufb01cient Tuning of Pretrained Models using",
+        "authors": "Dynamic Search-Free Lo w Rank A daptation, Mojtaba Valipour1,2Mehdi Rezagholizadeh2Ivan Kobyzev2Ali Ghodsi1, {mojtaba.valipour, ali.ghodsi}@uwaterloo.ca, {mehdi.rezagholizadeh, ivan.kobyzev}@huawei.com"
+    },
+    "/content/PDF_DATA/2301.10226.pdf": {
+        "title": "A Watermark for Large Language Models",
+        "authors": "John Kirchenbauer*Jonas Geiping*Yuxin Wen Jonathan Katz Ian Miers Tom Goldstein, University of Maryland,"
+    },
+    "/content/PDF_DATA/2306.11222.pdf": {
+        "title": "LoSparse: Structured Compression of Large Language",
+        "authors": "Models based on Low-Rank and Sparse Approximation\u2217, Yixiao Li\u2217\u2217, Yifan Yu\u2217\u2217, Qingru Zhang, Chen Liang,, Pengcheng He, Weizhu Chen, Tuo Zhao\u2020"
+    },
+    "/content/PDF_DATA/2307.03172.pdf": {
+        "title": "Lost in the Middle: How Language Models Use Long Contexts",
+        "authors": "Nelson F. Liu1\u2217Kevin Lin2John Hewitt1Ashwin Paranjape3, Michele Bevilacqua3Fabio Petroni3Percy Liang1, 1Stanford University2University of California, Berkeley3Samaya AI"
+    },
+    "/content/PDF_DATA/2112.00029.pdf": {
+        "title": "Pixelated Butter\ufb02y: Simple and E\ufb03cient Sparse Training for",
+        "authors": "Neural Network Models, Tri Dao\u2217\u2020, Beidi Chen\u2217\u2020, Kaizhao Liang\u2295, Jiaming Yang\u22c4, Zhao Song\u00a7, Atri Rudra\u2021, and, Christopher R\u00e9\u2020"
+    },
+    "/content/PDF_DATA/1705.07565.pdf": {
+        "title": "Learning to Prune Deep Neural Networks via",
+        "authors": "Layer-wise Optimal Brain Surgeon, Xin Dong, Nanyang Technological University, Singapore"
+    },
+    "/content/PDF_DATA/2401.04088.pdf": {
+        "title": "Mixtral of Experts",
+        "authors": "Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux, Arthur Mensch,, Blanche Savary, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas,, Emma Bou Hanna, Florian Bressand, Gianna Lengyel, Guillaume Bour,"
+    },
+    "/content/PDF_DATA/2305.14314.pdf": {
+        "title": "QL ORA: Efficient Finetuning of Quantized LLMs",
+        "authors": "Tim Dettmers\u2217Artidoro Pagnoni\u2217Ari Holtzman, Luke Zettlemoyer, University of Washington"
+    },
+    "/content/PDF_DATA/1910.13461.pdf": {
+        "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural",
+        "authors": "Language Generation, Translation, and Comprehension, Mike Lewis*, Yinhan Liu*, Naman Goyal*, Marjan Ghazvininejad,, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov, Luke Zettlemoyer"
+    },
+    "/content/PDF_DATA/20-074.pdf": {
+        "title": "Journal of Machine Learning Research 21 (2020) 1-67 Submitted 1/20; Revised 6/20; Published 6/20",
+        "authors": "Exploring the Limits of Transfer Learning with a Uni\ufb01ed, Text-to-Text Transformer, Colin Ra\ufb00el\u2217craffel@gmail.com"
+    },
+    "/content/PDF_DATA/2305.19268.pdf": {
+        "title": "Intriguing Properties of Quantization at Scale",
+        "authors": "Arash Ahmadian*\u2020, Cohere For AISaurabh Dash*, CohereHongyu Chen*"
+    },
+    "/content/PDF_DATA/2020.aacl-main.88.pdf": {
+        "title": "Proceedings of the 1st Conference of the Asia-Paci\ufb01c Chapter of the Association for Computational Linguistics",
+        "authors": "and the 10th International Joint Conference on Natural Language Processing , pages 884\u2013889, December 4 - 7, 2020. c\u20dd2020 Association for Computational Linguistics884Compressing Pre-trained Language Models by Matrix Decomposition, Matan Ben Noach\u2020andYoav Goldberg\u2217\u2021"
+    },
+    "/content/PDF_DATA/2307.09288.pdf": {
+        "title": "Llama 2 : Open Foundation and Fine-Tuned Chat Models",
+        "authors": "Hugo Touvron\u2217Louis Martin\u2020Kevin Stone\u2020, Peter Albert Amjad Almahairi Yasmine Babaei Nikolay Bashlykov Soumya Batra, Prajjwal Bhargava Shruti Bhosale Dan Bikel Lukas Blecher Cristian Canton Ferrer Moya Chen"
+    },
+    "/content/PDF_DATA/2004.14566.pdf": {
+        "title": "TRP: Trained Rank Pruning for Ef\ufb01cient Deep Neural Networks",
+        "authors": "Yuhui Xu1,Yuxi Li1,Shuai Zhang2,Wei Wen3,Botao Wang2,, Yingyong Qi2,Yiran Chen3,Weiyao Lin1,Hongkai Xiong1, 1Shanghai Jiao Tong University2Qualcomm AI Research3Duke University"
+    },
+    "/content/PDF_DATA/2306.09782.pdf": {
+        "title": "Preprint",
+        "authors": "FULL PARAMETER FINE-TUNING FOR LARGE, LANGUAGE MODELS WITH LIMITED RESOURCES, Kai Lv, Yuqing Yang, Tengxiao Liu, Qinghui Gao, Qipeng Guo, Xipeng Qiu\u2217"
+    },
+    "/content/PDF_DATA/2204.02311.pdf": {
+        "title": "PaLM: Scaling Language Modeling with Pathways",
+        "authors": "Aakanksha Chowdhery\u2217Sharan Narang\u2217Jacob Devlin\u2217, Maarten Bosma Gaurav Mishra Adam Roberts Paul Barham, Hyung Won Chung Charles Sutton Sebastian Gehrmann Parker Schuh Kensen Shi"
+    },
+    "/content/PDF_DATA/2004.10568.pdf": {
+        "title": "Up or Down? Adaptive Rounding for Post-Training Quantization",
+        "authors": "Markus Nagel* 1Rana Ali Amjad* 1Mart van Baalen1Christos Louizos1Tijmen Blankevoort1,"
+    },
+    "/content/PDF_DATA/2109.12948.pdf": {
+        "title": "Understanding and Overcoming the Challenges of",
+        "authors": "Ef\ufb01cient Transformer Quantization, Yelysei Bondarenko, Markus Nagel, Tijmen Blankevoort, Qualcomm AI Research\u2217"
+    },
+    "/content/PDF_DATA/2205.14135.pdf": {
+        "title": "FlashAttention : Fast and Memory-E\ufb03cient Exact Attention",
+        "authors": "with IO-Awareness, Tri Daoy, Daniel Y. Fuy, Stefano Ermony, Atri Rudraz, and Christopher R\u00e9y, yDepartment of Computer Science, Stanford University"
+    },
+    "/content/PDF_DATA/2310.05492.pdf": {
+        "title": "How Abilities in Large Language Models are Affected by Supervised",
+        "authors": "Fine-tuning Data Composition, Guanting Dong*, Hongyi Yuan*, Keming Lu, Chengpeng Li*, Mingfeng Xue, Dayiheng Liu, Wei Wang, Zheng Yuan, Chang Zhou, Jingren Zhou"
+    },
+    "/content/PDF_DATA/2007.14966.pdf": {
+        "title": "Published as a conference paper at ICLR 2021",
+        "authors": "MIROSTAT : A N EURAL TEXT DECODING ALGORITHM, THAT DIRECTLY CONTROLS PERPLEXITY, Sourya Basu\u2217Govardana Sachitanandam Ramachandran\u2020Nitish Shirish Keskar\u2020"
+    },
+    "/content/PDF_DATA/2304.01373.pdf": {
+        "title": "Pythia : A Suite for Analyzing Large Language Models",
+        "authors": "Across Training and Scaling, Stella Biderman* 1 2Hailey Schoelkopf* 1 3Quentin Anthony1Herbie Bradley1 4Kyle O\u2019Brien1, Eric Hallahan1Mohammad Aflah Khan5Shivanshu Purohit6 1USVSN Sai Prashanth1Edward Raff2"
+    },
+    "/content/PDF_DATA/2305.13048.pdf": {
+        "title": "RWKV: Reinventing RNNs for the Transformer Era",
+        "authors": "Bo Peng1,2\u2217Eric Alcaide2,3,4\u2217Quentin Anthony2,5\u2217, Alon Albalak2,6Samuel Arcadinho2,7Stella Biderman2,8Huanqi Cao9Xin Cheng10, Michael Chung11Xingjian Du1Matteo Grella12Kranthi Kiran GV2,13Xuzheng He2"
+    },
+    "/content/PDF_DATA/1910.07467.pdf": {
+        "title": "Root Mean Square Layer Normalization",
+        "authors": "Biao Zhang1Rico Sennrich2,1, 1School of Informatics, University of Edinburgh, 2Institute of Computational Linguistics, University of Zurich"
+    },
+    "/content/PDF_DATA/2311.00502v1.pdf": {
+        "title": "Efficient LLM Inference on CPUs",
+        "authors": "Haihao Shen Hanwen Chang Bo Dong Yu Luo Hengyu Meng, {haihao.shen, hanwen.chang, bo1.dong, yu.luo, hengyu.meng}@intel.com,"
+    },
+    "/content/PDF_DATA/language_models_are_unsupervised_multitask_learners.pdf": {
+        "title": "Language Models are Unsupervised Multitask Learners",
+        "authors": "Alec Radford*1Jeffrey Wu*1Rewon Child1David Luan1Dario Amodei**1Ilya Sutskever**1,"
+    },
+    "/content/PDF_DATA/2204.06745.pdf": {
+        "title": "GPT-NeoX-20B: An Open-Source Autoregressive Language Model",
+        "authors": "Sid Black * Stella Biderman * Eric Hallahan *, Quentin Anthony Leo Gao Laurence Golding Horace He, Connor Leahy Kyle McDonell Jason Phang Michael Pieler"
+    },
+    "/content/PDF_DATA/NIPS-1989-optimal-brain-damage-Paper.pdf": {
+        "title": "598 Le Cun, Denker and Solla",
+        "authors": "Optimal Brain Damage , Yann Le Cun, John S. Denker and Sara A. Sol1a , AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    "/content/PDF_DATA/2211.05100.pdf": {
+        "title": "BLOOM: A 176B-Parameter Open-Access Multilingual",
+        "authors": "Language Model, BigScience Workshop\u2217, Major Contributors"
+    },
+    "/content/PDF_DATA/2103.13630.pdf": {
+        "title": "A Survey of Quantization Methods for Ef\ufb01cient",
+        "authors": "Neural Network Inference, Amir Gholami\u2217, Sehoon Kim\u2217, Zhen Dong\u2217, Zhewei Yao\u2217, Michael W. Mahoney, Kurt Keutzer, University of California, Berkeley"
+    },
+    "/content/PDF_DATA/2308.16898v1.pdf": {
+        "title": "Transformers as Support Vector Machines",
+        "authors": "Davoud Ataee Tarzanagh1\u22c6Yingcong Li2\u22c6Christos Thrampoulidis3Samet Oymak4\u2020,"
+    },
+    "/content/PDF_DATA/1901.02860.pdf": {
+        "title": "Transformer-XL: Attentive Language Models",
+        "authors": "Beyond a Fixed-Length Context, Zihang Dai\u221712, Zhilin Yang\u221712, Yiming Yang1, Jaime Carbonell1,, Quoc V . Le2, Ruslan Salakhutdinov1"
+    },
+    "/content/PDF_DATA/2312.00752.pdf": {
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Albert Gu *1and Tri Dao *2, 1Machine Learning Department, Carnegie Mellon University, 2Department of Computer Science, Princeton University"
+    },
+    "/content/PDF_DATA/2309.10668.pdf": {
+        "title": "Language Modeling Is Compression",
+        "authors": "Gr\u00e9goire Del\u00e9tang*1, Anian Ruoss*1, Paul-Ambroise Duquenne2, Elliot Catt1, Tim Genewein1, Christopher, Mattern1, Jordi Grau-Moya1, Li Kevin Wenliang1, Matthew Aitchison1, Laurent Orseau1, Marcus Hutter1and, Joel Veness1"
+    },
+    "/content/PDF_DATA/2211.09718.pdf": {
+        "title": "Numerical Optimizations for Weighted Low-rank",
+        "authors": "Estimation on Language Model, Ting Hua\u2217, Yen-Chang Hsu\u2217, Felicity Wang, Qian Lou, Yilin Shen, Hongxia Jin, Samsung Research America"
+    },
+    "/content/PDF_DATA/2106.09685.pdf": {
+        "title": "LORA: L OW-RANK ADAPTATION OF LARGE LAN-",
+        "authors": "GUAGE MODELS, Edward Hu\u2217Yelong Shen\u2217Phillip Wallis Zeyuan Allen-Zhu, Yuanzhi Li Shean Wang Lu Wang Weizhu Chen"
+    },
+    "/content/PDF_DATA/2212.03551.pdf": {
+        "title": "arXiv:2212.03551v5  [cs.CL]  16 Feb 2023Talking About Large Language Models",
+        "authors": "Murray Shanahan, Imperial College London, m.shanahan@imperial.ac.uk"
+    },
+    "/content/PDF_DATA/radford2018improving.pdf": {
+        "title": "Improving Language Understanding",
+        "authors": "by Generative Pre-Training, Alec Radford, OpenAI"
+    },
+    "/content/PDF_DATA/2306.07042.pdf": {
+        "title": "Transformers learn through gradual rank increase",
+        "authors": "Enric Boix-Adser` a1,2Etai Littwin1, Emmanuel Abbe1,3Samy Bengio1Joshua Susskind1, 1Apple2MIT3EPFL"
+    },
+    "/content/PDF_DATA/2305.03047.pdf": {
+        "title": "Principle-Driven Self-Alignment of Language Models",
+        "authors": "from Scratch with Minimal Human Supervision, Zhiqing Sun1\u2217Yikang Shen2Qinhong Zhou3, Hongxin Zhang3Zhenfang Chen2David Cox2"
+    },
+    "/content/PDF_DATA/1701.06538.pdf": {
+        "title": "Under review as a conference paper at ICLR 2017",
+        "authors": "OUTRAGEOUSLY LARGE NEURAL NETWORKS :, THESPARSELY -GATED MIXTURE -OF-EXPERTS LAYER, Noam Shazeer1, Azalia Mirhoseini\u2217\u20201, Krzysztof Maziarz\u22172, Andy Davis1, Quoc Le1, Geoffrey"
+    },
+    "/content/PDF_DATA/2208.11580.pdf": {
+        "title": "Optimal Brain Compression: A Framework for",
+        "authors": "Accurate Post-Training Quantization and Pruning, Elias Frantar\u2217, IST Austria"
+    },
+    "/content/PDF_DATA/2305.11627.pdf": {
+        "title": "LLM-Pruner: On the Structural Pruning",
+        "authors": "of Large Language Models, Xinyin Ma Gongfan Fang Xinchao Wang\u2217, National University of Singapore"
+    },
+    "/content/PDF_DATA/1909.08053.pdf": {
+        "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using",
+        "authors": "Model Parallelism, Mohammad Shoeybi1 2Mostofa Patwary1 2Raul Puri1 2Patrick LeGresley2Jared Casper2, Bryan Catanzaro2"
+    },
+    "/content/PDF_DATA/2107.11817.pdf": {
+        "title": "Go Wider Instead of Deeper",
+        "authors": "Fuzhao Xue, Ziji Shi, Futao Wei, Yuxuan Lou, Yong Liu, Yang You, Department of Computer Science, National University of Singapore, Singapore, {f.xue,ziji.shi}@u.nus.edu, weifutao2019@gmail.com, yuxuanlou@u.nus.edu, {liuyong,youy}@comp.nus.edu.sg"
+    },
+    "/content/PDF_DATA/powerinfer-20231219.pdf": {
+        "title": "PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU\u2217",
+        "authors": "Yixin Song, Zeyu Mi\u2020, Haotong Xie and Haibo Chen, Institute of Parallel and Distributed Systems (IPADS), Shanghai Jiao Tong University,"
+    },
+    "/content/PDF_DATA/2101.03961.pdf": {
+        "title": "Journal of Machine Learning Research 23 (2022) 1-40 Submitted 8/21; Revised 3/22; Published 4/22",
+        "authors": "Switch Transformers: Scaling to Trillion Parameter Models, with Simple and E\ufb03cient Sparsity, William Fedus\u2217"
+    },
+    "/content/PDF_DATA/2203.16634.pdf": {
+        "title": "Transformer Language Models without Positional Encodings",
+        "authors": "Still Learn Positional Information, Adi Haviv\u03c4Ori Ram\u03c4O\ufb01r Press\u03c9Peter Izsak\u03b9Omer Levy\u03c4\u00b5, \u03c4Tel Aviv University\u03c9University of Washington\u03b9Intel Labs\u00b5Meta AI"
+    },
+    "/content/PDF_DATA/2309.06180.pdf": {
+        "title": "Efficient Memory Management for Large Language",
+        "authors": "Model Serving with PagedAttention, Woosuk Kwon1,\u2217Zhuohan Li1,\u2217Siyuan Zhuang1Ying Sheng1,2Lianmin Zheng1Cody Hao Yu3, Joseph E. Gonzalez1Hao Zhang4Ion Stoica1"
+    },
+    "/content/PDF_DATA/1910.01108.pdf": {
+        "title": "DistilBERT, a distilled version of BERT: smaller,",
+        "authors": "faster, cheaper and lighter, Victor SANH, Lysandre DEBUT, Julien CHAUMOND, Thomas WOLF, Hugging Face"
+    },
+    "/content/PDF_DATA/1409.3215v3.pdf": {
+        "title": "arXiv:1409.3215v3  [cs.CL]  14 Dec 2014Sequenceto SequenceLearning",
+        "authors": "with Neural Networks, Ilya Sutskever, Google"
+    },
+    "/content/PDF_DATA/2307.02973.pdf": {
+        "title": "Pruning vs Quantization: Which is Better?",
+        "authors": "Andrey Kuzmin, Markus Nagel, Mart van Baalen, Arash Behboodi, Tijmen Blankevoort, Qualcomm AI Research\u2217, Amsterdam, The Netherlands"
+    },
+    "/content/PDF_DATA/1911.02150.pdf": {
+        "title": "arXiv:1911.02150v1  [cs.NE]  6 Nov 2019Fast Transformer Decoding: One Write-Head is All",
+        "authors": "You Need, Noam Shazeer, Google"
+    },
+    "/content/PDF_DATA/2004.04124.pdf": {
+        "title": "LadaBERT: Lightweight Adaptation of BERT",
+        "authors": "through Hybrid Model Compression, Yihuan Mao1,\u2217, Yujing Wang2,3,\u2020, Chufan Wu1, Chen Zhang2, Yang Wang2, Quanlu Zhang2, Yaming Yang2, Yunhai Tong3, Jing Bai2"
+    },
+    "/content/PDF_DATA/2304.00612.pdf": {
+        "title": "Eight Things to Know about Large Language Models",
+        "authors": "Samuel R. Bowman1 2,"
+    },
+    "/content/PDF_DATA/2307.10169.pdf": {
+        "title": "Challenges and Applications of Large Language Models",
+        "authors": "Jean Kaddour\u03b1,\u2020,\u2217, Joshua Harris\u03b2,\u2217, Maximilian Mozes\u03b1,, Herbie Bradley\u03b3,\u03b4,\u03f5, Roberta Raileanu\u03b6, and Robert McHardy\u03b7,\u2217, \u03b1University College London\u03b2UK Health Security Agency\u03b3EleutherAI"
+    },
+    "/content/PDF_DATA/2304.01933.pdf": {
+        "title": "LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of",
+        "authors": "Large Language Models, Zhiqiang Hu1Lei Wang2\u2217Yihuai Lan Wanyu Xu4Ee-Peng Lim2, Lidong Bing3Xing Xu5Soujanya Poria1Roy Ka-Wei Lee1"
+    },
+    "/content/PDF_DATA/2203.15556.pdf": {
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Jordan Ho\ufb00mann\u2605, Sebastian Borgeaud\u2605, Arthur Mensch\u2605, Elena Buchatskaya, Trevor Cai, Eliza Rutherford,, Diego de Las Casas, Lisa Anne Hendricks, Johannes Welbl, Aidan Clark, Tom Hennigan, Eric Noland,, Katie Millican, George van den Driessche, Bogdan Damoc, Aurelia Guy, Simon Osindero, Karen Simonyan,"
+    },
+    "/content/PDF_DATA/2312.09993.pdf": {
+        "title": "LLaMAntino : LLaMA 2 Models for Effective Text Generation in Italian Language",
+        "authors": "PIERPAOLO BASILE\u2217,University of Bari Aldo Moro, Italy, ELIO MUSACCHIO, University of Bari Aldo Moro, Italy, MARCO POLIGNANO, University of Bari Aldo Moro, Italy"
+    }
+}
