@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import './App.css';
 import axios from "axios";
 
@@ -6,9 +6,13 @@ function App() {
   const [question, setQuestion] = useState('');  // State for holding the question
   const [messages, setMessages] = useState([]);  // Store chat messages
 
-  const handleSubmit = async () => {
+  // Memoize the messages array to prevent unnecessary recalculations
+  const memoizedMessages = useMemo(() => messages, [messages]);
+
+  // Memoize the handleSubmit function using useCallback
+  const handleSubmit = useCallback(async () => {
     if (question.trim() === "") return;
-    setMessages([...messages, { type: 'question', text: question }]); // Add question to messages
+    setMessages([...memoizedMessages, { type: 'question', text: question }]); // Add question to messages
 
     try {
       const response = await axios.post('http://localhost:8080/api/question', { question });
@@ -19,7 +23,7 @@ function App() {
     }
 
     setQuestion('');  // Clear input after submission
-  };
+  }, [question, memoizedMessages]);  // Recreate handleSubmit only if question or memoizedMessages changes
 
   return (
     <>
@@ -33,7 +37,7 @@ function App() {
         
         <div className="chat-box">
           {/* Display the messages */}
-          {messages.map((message, index) => (
+          {memoizedMessages.map((message, index) => (
             <div key={index} className={`message ${message.type}`}>
               <p>{message.text}</p>
             </div>
