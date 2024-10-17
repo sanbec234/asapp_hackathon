@@ -114,9 +114,9 @@ cd pdfquery
 
 ## Usage
 
-1. **Upload PDF**: Upload your PDF document using the interface.
-2. **Ask Questions**: Type your questions related to the document in the provided input field.
-3. **Get Answers**: The system will process the document and return the most relevant answer.
+
+1. **Ask Questions**: Type your questions related to the document in the provided input field.
+2. **Get Answers**: The system will process the document and return the most relevant answer.
 
 ### Example Workflow:
 
@@ -128,18 +128,7 @@ cd pdfquery
 
 ## API Endpoints
 
-### 1. **POST /api/upload**
-- **Description**: Upload a PDF file to the server.
-- **Request**: multipart/form-data
-- **Response**: 
-  json
-  {
-    "message": "File uploaded successfully.",
-    "file_id": "unique_file_id"
-  }
-  
-
-### 2. **POST /api/question**
+### 1. **POST /api/question**
 - **Description**: Ask a question related to the uploaded PDF.
 - **Request**: 
   json
@@ -193,5 +182,5 @@ pdfquery/
 
 ## Contributors
 
-- **Navanee, Snehan, Soorya, Sushant, VishnuDharshan** – Developer, Backend & Frontend
+- **Navaneetha Krishnan K S, Snehan, Soorya, Sushant, VishnuDharshan** – Developer, Backend & Frontend
 ---
