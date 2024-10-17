@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import './App.css';
 import axios from "axios";
 
+
 function App() {
   const [question, setQuestion] = useState('');  
   const [messages, setMessages] = useState([]);  
@@ -12,6 +13,7 @@ function App() {
   const handleSubmit = useCallback(async () => {
     if (question.trim() === "") return;
 
+    // Add user question to messages
     setMessages(prevMessages => [...prevMessages, { type: 'question', text: question }]);
     setLoading(true);
 
@@ -19,8 +21,34 @@ function App() {
     const signal = controller.signal;
 
     try {
-      const response = await axios.post('http://localhost:8080/api/question', { question }, { signal });
+      // Clean the search query using Gemini API
+      const url =
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCcpvCHpUEUagN5OCzkD17wInXFTabpQRQ";
+      
+      const headers = { "Content-Type": "application/json" };
+
+      const data = {
+        contents: [
+          {
+            parts: [
+              {
+                text: `return only the redefined version such that the query will be understandable for the Embedding and don't change anything but clean it in terms of typo and grammatical of the following query: "${question}"`,
+              },
+            ],
+          },
+        ],
+      };
+
+      // Call the Gemini API to clean the query
+      const geminiResponse = await axios.post(url, data, { headers });
+      const extractedQuery = geminiResponse.data.candidates[0].content.parts[0].text;
+      const cleanedQuery = extractedQuery.replace(/json\n|/g, "").trim();
+
+      // Send the cleaned query to your backend
+      const response = await axios.post('http://localhost:8080/api/question', { question: cleanedQuery }, { signal });
       const answer = response.data.answer;
+
+      // Add answer to messages
       setMessages(prevMessages => [...prevMessages, { type: 'answer', text: answer }]);
     } catch (error) {
       if (axios.isCancel(error)) {
@@ -33,7 +61,7 @@ function App() {
       setLoading(false);
     }
 
-    setQuestion('');
+    setQuestion(''); // Clear the input after submission
     return () => {
       controller.abort();
     };
@@ -72,7 +100,7 @@ function App() {
                 handleSubmit(); // Submit the question
               }
             }}
-            />
+          />
           <button onClick={handleSubmit} className="submit-button">Send</button>
         </div>
       </main>
