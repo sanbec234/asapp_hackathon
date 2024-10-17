@@ -1,19 +1,94 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from huggingface_hub import login
+import json
+from langchain_groq import ChatGroq
+from langchain.schema import SystemMessage, HumanMessage
+import cassio
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain.vectorstores import Cassandra
+from langchain.indexes.vectorstore import VectorStoreIndexWrapper
 
-app = Flask(__name__)
-cors = CORS(app, origins='*')
+app = Flask(_name_)
+CORS(app, origins='*')
+
+def initialize_services():
+    try:
+        login(token="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")
+        ASTRA_DB_APPLICATION_TOKEN = "AstraCS:cUIKsAZQgdsZUzMlAOJsnxbR:808bfd213aa188fd28cdf20bfda17a3ca87795965057c84e2d53b19cf04fce3c"
+        ASTRA_DB_ID = "31282abc-868e-4c75-906e-adf466f86267"
+        cassio.init(token=ASTRA_DB_APPLICATION_TOKEN, database_id=ASTRA_DB_ID)
+
+        embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        astra_vector_store = Cassandra(embedding=embeddings, session=None, keyspace=None, table_name="Nurtura")
+        astra_vector_index = VectorStoreIndexWrapper(vectorstore=astra_vector_store)
+
+        return astra_vector_index
+    except Exception as e:
+        print(f"Error initializing services: {e}")
+        return None
+
+astra_vector_index = initialize_services()
 
 @app.route('/api/question', methods=['POST'])
 def receive_question():
+    if not astra_vector_index:
+        return jsonify({"error": "Service initialization failed."}), 500
+
     data = request.get_json()
-    question = data.get('question', '')
-    print(f"Received question: {question}")
+    questions = data.get('question', '')
+    
+    if not questions:
+        return jsonify({"error": "No question provided."}), 400
 
-    # Temporary answer
-    answer = "This is a temporary answer."
+    print(f"Received question: {questions}")
 
-    return jsonify({"message": "Question received!", "answer": answer})
+    try:
+        with open('paper_metadata.json', 'r') as file:
+            auth_data = json.load(file)
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+        json_string = " ".join([f"{key}: {value}" for key, value in auth_data.items()]).strip()
+
+        retriever = astra_vector_index.vectorstore.as_retriever(
+            search_type="similarity_score_threshold",
+            search_kwargs={'score_threshold': 0.55, 'k': 10}
+        )
+
+        retrieved_docs = retriever.invoke(questions)
+
+        rag_content = [f"Content: {doc.page_content} Source: {doc.metadata['source']}" for doc in retrieved_docs]
+        print("Retrieved Chunks:\n", rag_content)
+
+        llm = ChatGroq(groq_api_key="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", model_name="Llama-3.1-70b-Versatile")
+
+        context = f"Context: {rag_content}"
+        system_prompt = f"""
+        You are an expert in answering questions using the provided documents.
+        Here is the user's question: {questions}.
+        Based on the following relevant content: {context}, provide an accurate and concise response.
+        Your answer must:
+        1. Extract the most relevant information from the content.
+        2. Cite the author and title of the papers from the provided data: {json_string}, where applicable.
+        3. Mention the source first with the title of the paper of the source, then explain the key content from the context to answer the question effectively.
+        Ensure the response is clear, detailed, and fully answers the user's query based on the provided documents.
+        """
+
+        messages = [
+            SystemMessage(content=system_prompt),
+            HumanMessage(content=questions)
+        ]
+
+        output_generate = llm.invoke(messages)
+        print("Generated Response:\n", output_generate)
+
+        # Convert the output to a string if it's not already
+        answer = str(output_generate) if isinstance(output_generate, str) else output_generate.content
+
+        return jsonify({"message": "Question received!", "answer": answer})
+
+    except Exception as e:
+        print(f"Error processing the question: {e}")
+        return jsonify({"error": "An error occurred while processing the question."}), 500
+
+if _name_ == '_main_':
+    app.run(debug=True, port=8080
