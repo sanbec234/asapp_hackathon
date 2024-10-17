@@ -9,7 +9,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import Cassandra
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app, origins='*')
 
 def initialize_services():
@@ -63,15 +63,21 @@ def receive_question():
 
         context = f"Context: {rag_content}"
         system_prompt = f"""
-        You are an expert in answering questions using the provided documents.
-        Here is the user's question: {questions}.
-        Based on the following relevant content: {context}, provide an accurate and concise response.
-        Your answer must:
-        1. Extract the most relevant information from the content.
-        2. Cite the author and title of the papers from the provided data: {json_string}, where applicable.
-        3. Mention the source first with the title of the paper of the source, then explain the key content from the context to answer the question effectively.
-        Ensure the response is clear, detailed, and fully answers the user's query based on the provided documents.
+        You are an AI assistant specialized in providing expert answers based on the provided documents.
+        
+        If the user's input, "{questions}", is a greeting or general conversation (e.g., small talk or casual questions), respond in a friendly and conversational manner, like a normal chatbot.
+
+        If the input is a question requiring expert knowledge, such as: "{questions}", follow these steps:
+        1. Extract the most relevant information from the provided content: "{context}".
+        2. Cite the author and title of the papers from the provided data: "{json_string}" where applicable.
+        3. Always start your response by mentioning the source (title of the paper) before explaining the key information from the context.
+
+        Ensure your response is:
+        - Clear and concise and breif.
+        - Directly answers the user's question based on the provided documents.
+        - Well-structured with the relevant citations where necessary.
         """
+
 
         messages = [
             SystemMessage(content=system_prompt),
@@ -90,5 +96,5 @@ def receive_question():
         print(f"Error processing the question: {e}")
         return jsonify({"error": "An error occurred while processing the question."}), 500
 
-if _name_ == '_main_':
-    app.run(debug=True, port=8080
+if __name__ == '__main__':
+    app.run(debug=True, port=8080)
