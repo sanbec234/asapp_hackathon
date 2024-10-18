@@ -1,0 +1,9 @@
+Flask
+flask-cors
+huggingface-hub
+langchain
+cassio
+langchain-groq
+langchain-huggingface
+sentence-transformers
+astra-cassandra-driver
